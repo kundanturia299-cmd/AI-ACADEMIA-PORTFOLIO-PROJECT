@@ -3,51 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
-     <link rel="stylesheet" href="style.css">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id=" 'header">
-        <nav>
-            <div class ="items">
-                <ul>
-                    <a href="#home"><li>Home</li></a>
-                    <a href="#about"><li>about</li></a>
-                    <a href="#skills"><li>skills</li></a>
-                    <a href="#projects"><li>projects</li></a>
-                    <a href="#contact-info"><li>contact info</li></a>
-                </ul>
-            </div>
-        </nav>
+
+    <div class="navbar">
+        <h2 class="logo">Port<span>folio.</span></h2>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span>Kundan Turia</span></h1>
+            <h2>Aspiring Web Developer</h2>
+
+            <p class="description">
+                I am a passionate student interested in
+                web development and programming.
+                I love learning new technologies and
+                creating simple, useful websites.
+            </p>
+        </div>
+
     </section>
-<section id = "main">
-    <div class ="introduction">
-        <p id="eyebrow">Hi, I am Kundan Turia</p>
-        <h1>Personal Portfolio</h1>
-        <p id="intro">
-            I am a 4th year BCA student. My specialization is Artificial Intelligence. I have  experience in Full-Stack Web Development.
+
+    <section class="section about" id="about">
+        <div class="heading">
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-content">
+            <div class="about-box">
+                <h3>Who Am I?</h3>
+
+                <p>
+                    Hello! I am Kundan Turia, a student who
+                    enjoys learning about technology,
+                    programming, and web development.
+                </p>
+
+                <p>
+                    I believe in continuous learning
+                    and improving my skills through
+                    practical projects and challenges.
+                </p>
+            </div>
+
+            <div class="about-details">
+                <div class="detail">
+                    <h3>Education</h3>
+                    <p>Bachelor of Computer Applications</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Interests</h3>
+                    <p>Web Development, Coding, Technology</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Goal</h3>
+                    <p>Become a Skilled Software Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+        <div class="heading">
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills">
+            <div class="skill-card">
+                <h3>HTML</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>CSS</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Python</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+        <div class="heading">
+            <h2>Recent <span>Projects</span></h2>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <div class="project-number">01</div>
+
+                <h3>Student Result Dashboard</h3>
+
+                <p>
+                    A simple website to calculate
+                    marks, percentage, grades,
+                    and student results.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">02</div>
+
+                <h3>Movie Booking Website</h3>
+
+                <p>
+                    A movie booking system where
+                    users can explore movies,
+                    select seats, and book tickets.
+                </p>
+
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>HTML</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">03</div>
+
+                <h3>Login & Registration</h3>
+
+                <p>
+                    A registration and login form
+                    with basic validation for
+                    user details.
+                </p>
+
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contact">
+        <div class="heading">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <div class="contact-content">
+            <div class="contact-text">
+                <p>
+                    Feel free to contact me for
+                    collaboration, internships,
+                    or just to say hello.
+                </p>
+
+                <p class="email">kundanturia299@gmail.com</p>
+            </div>
+
+            <form id="contactForm">
+                <input type="text" id="name"
+                    placeholder="Your Name" required>
+
+                <input type="email" id="email"
+                    placeholder="Your Email" required>
+
+                <textarea id="message"
+                    placeholder="Your Message"
+                    rows="5" required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+                <p id="result"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            © <span id="year"></span>
+            Kundan Turia | My Portfolio
         </p>
-    </div>
-</section>
-<section id="footer">
-    
-    <div id="contact-info">
-        <p id="phone-number">
-        12456474554
-        </p>
-        <p id="email">
-            kundanturia299@gmail.com
-        </p>
-    </div>
-    <form id="contactForm">
-<label for="name">Name</label>
-<input type="text" id="name" required>
-<label for="email">Email</label>
-<input type="email" id="email" required>
-<textarea id="message"></textarea>
-<button type="submit">Send</button>
-</form>
-</section>
-     <script src="script.js"></script>    
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
